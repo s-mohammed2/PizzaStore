@@ -21,7 +21,7 @@ import com.pizza.services.OrderService;
 @RestController
 public class OrderController {
 	
-	@RequestMapping(value = "/order", method=RequestMethod.PUT)
+	@RequestMapping(value = "/orders", method=RequestMethod.PUT)
 	public ResponseEntity<String> createOrder(HttpServletRequest request) throws Exception{
 		Orders order = null;
 		OrderService orderService = new OrderService();
